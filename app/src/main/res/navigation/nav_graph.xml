@@ -12,10 +12,18 @@
         <action
             android:id="@+id/action_login_to_registrarse"
             app:destination="@id/PantallaRegistrarse" />
+        <action
+            android:id="@+id/action_PantallaLogin_to_ventasFragment3"
+            app:destination="@id/PantallaVentas" />
     </fragment>
     <fragment
         android:id="@+id/PantallaRegistrarse"
         android:name="com.example.appfavas.Registrarse"
         android:label="fragment_registrarse"
         tools:layout="@layout/fragment_registrarse" />
+    <fragment
+        android:id="@+id/PantallaVentas"
+        android:name="com.example.appfavas.VentasFragment"
+        android:label="fragment_ventas"
+        tools:layout="@layout/fragment_ventas" />
 </navigation>

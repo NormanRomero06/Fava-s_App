@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Registrarse">
 
 
@@ -68,6 +69,7 @@
     </RelativeLayout>
 
     <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
         android:id="@+id/CView2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -82,6 +84,9 @@
         <EditText
             android:id="@+id/txtNombre"
             android:layout_width="300dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:layout_marginTop="20dp"
@@ -90,6 +95,9 @@
         <EditText
             android:id="@+id/txtApellido"
             android:layout_width="300dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:layout_marginTop="70dp"
@@ -100,6 +108,9 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
             android:layout_marginTop="120dp"
             android:hint="Usuario" />
 
@@ -108,6 +119,9 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
             android:layout_marginTop="170dp"
             android:layout_marginBottom="20dp"
             android:hint="Contraseña"
@@ -119,13 +133,14 @@
         android:id="@+id/btnRegistrarse"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:background="@drawable/login_btn_bg"
-        android:textColor="@color/colorPrimaryDark"
         android:text="Registrarse"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/CView2"
         app:layout_constraintEnd_toEndOf="@id/CView2"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@id/CView2"
         app:layout_constraintTop_toBottomOf="@id/CView2" />
 

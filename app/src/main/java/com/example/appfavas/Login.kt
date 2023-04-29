@@ -26,7 +26,7 @@ class Login : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLoginBinding.inflate(layoutInflater)
         iniciar()
         return binding.root
@@ -35,6 +35,9 @@ class Login : Fragment() {
     private fun iniciar() {
         binding.btnRegLogin.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaRegistrarse)
+        }
+        binding.btnLogin.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaVentas)
         }
 
     }

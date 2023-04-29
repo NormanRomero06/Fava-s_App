@@ -24,7 +24,7 @@ class Registrarse : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentRegistrarseBinding.inflate(layoutInflater)
         iniciar()
         return binding.root
@@ -32,6 +32,9 @@ class Registrarse : Fragment() {
 
     private fun iniciar(){
         binding.btnLogRegister.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaLogin)
+        }
+        binding.btnRegistrarse.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaLogin)
         }
     }

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Ventas"
+        android:icon="@drawable/ventas"
+        android:menuCategory="system"
+        android:title="Ventas"
+        />
+    <item
+        android:id="@+id/Recibos"
+        android:menuCategory="system"
+        android:title="Recibos"
+        android:icon="@drawable/factura"
+        />
+
+    <item
+        android:id="@+id/Articulos"
+        android:menuCategory="system"
+        android:title="Artículos"
+        android:icon="@drawable/articulos"
+        />
+    <item
+        android:id="@+id/Cocina"
+        android:menuCategory="system"
+        android:title="Cocina"
+        android:icon="@drawable/cocina"
+        />
+    <item
+        android:id="@+id/Configuracion"
+        android:menuCategory="system"
+        android:title="Configuración"
+        android:icon="@drawable/configuraciones"
+        />
+    <item
+        android:id="@+id/Cierre"
+        android:menuCategory="system"
+        android:title="Cierre"
+        android:icon="@drawable/cierre"
+        />
+    <item
+        android:id="@+id/Pagos"
+        android:menuCategory="system"
+        android:title="Pagos"
+        android:icon="@drawable/cierre"
+        />
+
+
+</menu>

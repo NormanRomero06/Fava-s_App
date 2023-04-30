@@ -31,9 +31,6 @@ class Registrarse : Fragment() {
     }
 
     private fun iniciar(){
-        binding.btnLogRegister.setOnClickListener {
-            Navigation.findNavController(binding.root).navigate(R.id.PantallaLogin)
-        }
         binding.btnRegistrarse.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaLogin)
         }

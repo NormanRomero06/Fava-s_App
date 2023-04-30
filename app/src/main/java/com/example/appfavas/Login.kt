@@ -33,12 +33,12 @@ class Login : Fragment() {
     }
 
     private fun iniciar() {
-        binding.btnRegLogin.setOnClickListener {
+        binding.btnLogin.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaRegistrarse)
         }
-        binding.btnLogin.setOnClickListener {
+        /*binding.btnLogin.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaVentas)
-        }
+        }*/
 
     }
 

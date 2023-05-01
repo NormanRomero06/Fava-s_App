@@ -10,6 +10,9 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
+            android:id="@+id/action_login_to_registrarse"
+            app:destination="@id/PantallaRegistrarse" />
+        <action
             android:id="@+id/action_PantallaLogin_to_ventasFragment3"
             app:destination="@id/PantallaVentas" />
     </fragment>
@@ -26,12 +29,6 @@
         <action
             android:id="@+id/action_PantallaVentas_to_metodoPago"
             app:destination="@id/PantallaPagos" />
-        <action
-            android:id="@+id/action_PantallaVentas_to_PantallaRegistrarse"
-            app:destination="@id/PantallaRegistrarse" />
-        <action
-            android:id="@+id/action_PantallaVentas_to_cobroFragment"
-            app:destination="@id/cobroFragment" />
     </fragment>
     <fragment
         android:id="@+id/PantallaPagos"
@@ -46,9 +43,5 @@
     <fragment
         android:id="@+id/cobroFragment"
         android:name="com.example.appfavas.CobroFragment"
-        android:label="CobroFragment" >
-        <action
-            android:id="@+id/action_cobroFragment_to_PantallaPagoTarjeta"
-            app:destination="@id/PantallaPagoTarjeta" />
-    </fragment>
+        android:label="CobroFragment" />
 </navigation>

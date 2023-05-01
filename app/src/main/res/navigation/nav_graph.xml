@@ -25,5 +25,19 @@
         android:id="@+id/PantallaVentas"
         android:name="com.example.appfavas.VentasFragment"
         android:label="fragment_ventas"
-        tools:layout="@layout/fragment_ventas" />
+        tools:layout="@layout/fragment_ventas" >
+        <action
+            android:id="@+id/action_PantallaVentas_to_metodoPago"
+            app:destination="@id/PantallaPagos" />
+    </fragment>
+    <fragment
+        android:id="@+id/PantallaPagos"
+        android:name="com.example.appfavas.MetodoPago"
+        android:label="fragment_metodo_pago"
+        tools:layout="@layout/fragment_metodo_pago" />
+    <fragment
+        android:id="@+id/PantallaPagoTarjeta"
+        android:name="com.example.appfavas.PagoTarjeta"
+        android:label="fragment_pago_tarjeta"
+        tools:layout="@layout/fragment_pago_tarjeta" />
 </navigation>

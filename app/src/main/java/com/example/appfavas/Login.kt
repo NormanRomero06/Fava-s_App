@@ -34,7 +34,7 @@ class Login : Fragment() {
 
     private fun iniciar() {
         binding.btnLogin.setOnClickListener {
-            Navigation.findNavController(binding.root).navigate(R.id.PantallaRegistrarse)
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaVentas)
         }
         /*binding.btnLogin.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaVentas)

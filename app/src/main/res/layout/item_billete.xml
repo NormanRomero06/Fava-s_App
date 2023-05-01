@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imgBillete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/billetes"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvImporteBillete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importe/Monto"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/imgBillete"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/horaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/imgBillete"
+        app:layout_constraintTop_toBottomOf="@id/tvImporteBillete"
+        />
+
+    <TextView
+        android:id="@+id/idBillete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/tvImporteBillete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="10dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

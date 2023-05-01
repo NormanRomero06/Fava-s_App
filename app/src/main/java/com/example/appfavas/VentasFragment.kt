@@ -10,6 +10,9 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.appfavas.databinding.FragmentVentasBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
@@ -17,6 +20,7 @@ import com.google.android.material.navigation.NavigationView
 class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListener{
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var toggle : ActionBarDrawerToggle
+    private lateinit var binding: FragmentVentasBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,10 +49,11 @@ class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListe
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.Ventas -> {
-                //Accion para el elemento ventas
+                findNavController().navigate(R.id.PantallaVentas)
                 return true
             }
             R.id.Recibos -> {
+                findNavController().navigate(R.id.PantallaPagos)
                 return true
             }
             R.id.Articulos -> {
@@ -58,6 +63,7 @@ class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListe
                 return true
             }
             R.id.Configuracion -> {
+                findNavController().navigate(R.id.PantallaRegistrarse)
                 return true
             }
             R.id.Cierre -> {

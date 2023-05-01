@@ -42,7 +42,7 @@
         android:id="@+id/Pagos"
         android:menuCategory="system"
         android:title="Pagos"
-        android:icon="@drawable/cierre"
+        android:icon="@drawable/pago"
         />
 
 

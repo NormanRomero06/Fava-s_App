@@ -40,4 +40,8 @@
         android:name="com.example.appfavas.PagoTarjeta"
         android:label="fragment_pago_tarjeta"
         tools:layout="@layout/fragment_pago_tarjeta" />
+    <fragment
+        android:id="@+id/cobroFragment"
+        android:name="com.example.appfavas.CobroFragment"
+        android:label="CobroFragment" />
 </navigation>

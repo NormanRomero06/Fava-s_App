@@ -20,7 +20,6 @@ import com.google.android.material.navigation.NavigationView
 class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListener{
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var toggle : ActionBarDrawerToggle
-    private lateinit var binding: FragmentVentasBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,7 +52,7 @@ class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListe
                 return true
             }
             R.id.Recibos -> {
-                findNavController().navigate(R.id.PantallaPagos)
+                findNavController().navigate(R.id.recibosFragment)
                 return true
             }
             R.id.Articulos -> {

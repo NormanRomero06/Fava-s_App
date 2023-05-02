@@ -1,4 +1,4 @@
-package com.example.appfavas
+package com.example.appfavas.navigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
+import com.example.appfavas.R
 import com.example.appfavas.databinding.FragmentMetodoPagoBinding
 
 class MetodoPago : Fragment() {

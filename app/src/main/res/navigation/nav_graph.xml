@@ -6,21 +6,21 @@
     app:startDestination="@id/PantallaLogin">
     <fragment
         android:id="@+id/PantallaLogin"
-        android:name="com.example.appfavas.Login"
+        android:name="com.example.appfavas.navigation.Login"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_PantallaLogin_to_ventasFragment3"
+            android:id="@+id/PantallaLoginToVentas"
             app:destination="@id/PantallaVentas" />
     </fragment>
     <fragment
         android:id="@+id/PantallaRegistrarse"
-        android:name="com.example.appfavas.Registrarse"
+        android:name="com.example.appfavas.navigation.Registrarse"
         android:label="fragment_registrarse"
         tools:layout="@layout/fragment_registrarse" />
     <fragment
         android:id="@+id/PantallaVentas"
-        android:name="com.example.appfavas.VentasFragment"
+        android:name="com.example.appfavas.navigation.VentasFragment"
         android:label="fragment_ventas"
         tools:layout="@layout/fragment_ventas" >
         <action
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaPagos"
-        android:name="com.example.appfavas.MetodoPago"
+        android:name="com.example.appfavas.navigation.MetodoPago"
         android:label="fragment_metodo_pago"
         tools:layout="@layout/fragment_metodo_pago" >
         <action
@@ -50,12 +50,12 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaPagoTarjeta"
-        android:name="com.example.appfavas.PagoTarjeta"
+        android:name="com.example.appfavas.navigation.PagoTarjeta"
         android:label="fragment_pago_tarjeta"
         tools:layout="@layout/fragment_pago_tarjeta" />
     <fragment
         android:id="@+id/PantallaCobro"
-        android:name="com.example.appfavas.CobroFragment"
+        android:name="com.example.appfavas.navigation.CobroFragment"
         android:label="CobroFragment" >
         <action
             android:id="@+id/action_cobroFragment_to_PantallaPagos"
@@ -63,22 +63,22 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaRecibos"
-        android:name="com.example.appfavas.RecibosFragment"
+        android:name="com.example.appfavas.navigation.RecibosFragment"
         android:label="fragment_recibos"
         tools:layout="@layout/fragment_recibos" />
     <fragment
         android:id="@+id/PantallaDividirPago"
-        android:name="com.example.appfavas.DividirPago"
+        android:name="com.example.appfavas.navigation.DividirPago"
         android:label="fragment_dividir_pago"
         tools:layout="@layout/fragment_dividir_pago" />
     <fragment
         android:id="@+id/PantallaTotalCambio"
-        android:name="com.example.appfavas.TotalCambio"
+        android:name="com.example.appfavas.navigation.TotalCambio"
         android:label="fragment_total_cambio"
         tools:layout="@layout/fragment_total_cambio" />
     <fragment
         android:id="@+id/devolucionFragment"
-        android:name="com.example.appfavas.DevolucionFragment"
+        android:name="com.example.appfavas.navigation.DevolucionFragment"
         android:label="fragment_devolucion"
         tools:layout="@layout/fragment_devolucion" />
 </navigation>

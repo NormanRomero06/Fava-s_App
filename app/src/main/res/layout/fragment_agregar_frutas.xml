@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AgregarFrutas">
+
+    <View
+        android:id="@+id/VwInicio"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/IvRegresar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/flechaizquierda"
+        app:layout_constraintBottom_toBottomOf="@id/VwInicio"
+        app:layout_constraintStart_toStartOf="@id/VwInicio"
+        app:layout_constraintTop_toTopOf="@id/VwInicio" />
+
+    <TextView
+        android:id="@+id/TvAgregarFruta"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Agregar Fruta"
+        android:textAlignment="center"
+        android:textColor="@color/boton"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/VwInicio" />
+
+    <TextView
+        android:id="@+id/TvNombreFruta"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Nombre"
+        android:textColor="@color/boton"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvAgregarFruta" />
+
+    <EditText
+        android:id="@+id/EtNombreFruta"
+        android:layout_width="331dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvNombreFruta" />
+
+    <TextView
+        android:id="@+id/TvPrecioFruta"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Precio"
+        android:textColor="@color/boton"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtNombreFruta" />
+
+    <EditText
+        android:id="@+id/EtPrecioFruta"
+        android:layout_width="331dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/black"
+        android:hint="0.00"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvPrecioFruta" />
+
+    <TextView
+        android:id="@+id/TvInventarioFruta"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Inventario"
+        android:textColor="@color/boton"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EtPrecioFruta" />
+
+    <TextView
+        android:id="@+id/TvStock"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:text="Stock"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvInventarioFruta" />
+
+    <EditText
+        android:id="@+id/EtInventarioFruta"
+        android:layout_width="331dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/black"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvStock" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGuardarFruta"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:textColor="@color/boton"
+        android:background="@drawable/login_btn_bg"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="Guardar"
+        app:layout_constraintTop_toBottomOf="@id/EtInventarioFruta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_PantallaVentas_to_recibosFragment"
             app:destination="@id/PantallaRecibos" />
+        <action
+            android:id="@+id/action_PantallaVentas_to_articuloFragment"
+            app:destination="@id/PantallaMenuArticulos" />
     </fragment>
     <fragment
         android:id="@+id/PantallaPagos"
@@ -70,7 +73,11 @@
         android:id="@+id/PantallaDividirPago"
         android:name="com.example.appfavas.navigation.DividirPago"
         android:label="fragment_dividir_pago"
-        tools:layout="@layout/fragment_dividir_pago" />
+        tools:layout="@layout/fragment_dividir_pago" >
+        <action
+            android:id="@+id/action_PantallaDividirPago_to_PantallaTotalDividirPago"
+            app:destination="@id/PantallaTotalDividirPago" />
+    </fragment>
     <fragment
         android:id="@+id/PantallaTotalCambio"
         android:name="com.example.appfavas.navigation.TotalCambio"
@@ -81,4 +88,45 @@
         android:name="com.example.appfavas.navigation.DevolucionFragment"
         android:label="fragment_devolucion"
         tools:layout="@layout/fragment_devolucion" />
+    <fragment
+        android:id="@+id/PantallaTotalDividirPago"
+        android:name="com.example.appfavas.TotalDividirPago"
+        android:label="fragment_total_dividir_pago"
+        tools:layout="@layout/fragment_total_dividir_pago" />
+    <fragment
+        android:id="@+id/PantallaMenuArticulos"
+        android:name="com.example.appfavas.navigation.ArticuloFragment"
+        android:label="fragment_articulo"
+        tools:layout="@layout/fragment_articulo" >
+        <action
+            android:id="@+id/action_articuloFragment_to_todosArticulosFragment"
+            app:destination="@id/PantallaTodosLosArticulos" />
+        <action
+            android:id="@+id/action_PantallaMenuArticulos_to_frutas"
+            app:destination="@id/PantallaFrutas" />
+    </fragment>
+    <fragment
+        android:id="@+id/PantallaTodosLosArticulos"
+        android:name="com.example.appfavas.navigation.TodosArticulosFragment"
+        android:label="fragment_todos_articulos"
+        tools:layout="@layout/fragment_todos_articulos" />
+    <fragment
+        android:id="@+id/PantallaFrutas"
+        android:name="com.example.appfavas.Frutas"
+        android:label="fragment_frutas"
+        tools:layout="@layout/fragment_frutas" >
+        <action
+            android:id="@+id/action_PantallaFrutas_to_agregarFrutas"
+            app:destination="@id/PantallaAgregarFrutas" />
+    </fragment>
+    <fragment
+        android:id="@+id/PantallaAgregarFrutas"
+        android:name="com.example.appfavas.AgregarFrutas"
+        android:label="fragment_agregar_frutas"
+        tools:layout="@layout/fragment_agregar_frutas" />
+    <fragment
+        android:id="@+id/PantallaCrudFrutas"
+        android:name="com.example.appfavas.CrudFrutas"
+        android:label="fragment_crud_frutas"
+        tools:layout="@layout/fragment_crud_frutas" />
 </navigation>

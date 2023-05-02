@@ -26,18 +26,6 @@
         app:layout_constraintStart_toStartOf="@id/VwInicio"
         app:layout_constraintTop_toTopOf="@id/VwInicio" />
 
-    <TextView
-        android:id="@+id/TvHecho"
-        android:layout_width="90dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="10dp"
-        android:text="Hecho"
-        android:textColor="@color/black"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="@id/VwInicio"
-        app:layout_constraintEnd_toEndOf="@id/VwInicio"
-        app:layout_constraintTop_toTopOf="@id/VwInicio" />
-
     <View
         android:id="@+id/VwCantidad"
         android:layout_width="350dp"
@@ -48,26 +36,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/VwInicio" />
 
-    <ImageView
-        android:id="@+id/IvMenos"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="20dp"
-        android:src="@drawable/menos"
-        app:layout_constraintBottom_toBottomOf="@id/VwCantidad"
-        app:layout_constraintStart_toStartOf="@id/VwCantidad"
-        app:layout_constraintTop_toTopOf="@+id/VwCantidad" />
-
-
-    <ImageView
-        android:id="@+id/IvMas"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="20dp"
-        android:src="@drawable/mas"
-        app:layout_constraintBottom_toBottomOf="@id/VwCantidad"
-        app:layout_constraintEnd_toEndOf="@id/VwCantidad"
-        app:layout_constraintTop_toTopOf="@+id/VwCantidad" />
 
     <TextView
         android:layout_width="120dp"
@@ -77,8 +45,8 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp"
-        app:layout_constraintEnd_toStartOf="@id/IvMas"
-        app:layout_constraintStart_toEndOf="@id/IvMenos"
+        app:layout_constraintEnd_toEndOf="@id/VwCantidad"
+        app:layout_constraintStart_toStartOf="@id/VwCantidad"
         app:layout_constraintTop_toTopOf="@id/VwCantidad" />
 
     <TextView
@@ -90,8 +58,8 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="@id/VwCantidad"
-        app:layout_constraintEnd_toStartOf="@id/IvMas"
-        app:layout_constraintStart_toEndOf="@id/IvMenos" />
+        app:layout_constraintEnd_toEndOf="@id/VwCantidad"
+        app:layout_constraintStart_toStartOf="@id/VwCantidad" />
 
     <TextView
         android:id="@+id/TvEfectivo"
@@ -117,18 +85,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TvEfectivo" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCobrarEf"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/login_btn_bg"
-        android:text="Cobrar"
-        android:textColor="@color/boton"
-        app:layout_constraintBottom_toBottomOf="@id/EtEfectivoRc"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/TvPagoT"
@@ -156,15 +112,16 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCobrarTj"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="15dp"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
         android:background="@drawable/login_btn_bg"
         android:text="Cobrar"
         android:textColor="@color/boton"
-        app:layout_constraintBottom_toBottomOf="@id/EtEfectivoT"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,16 +8,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.content.ContextCompat
-import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.appfavas.databinding.FragmentVentasBinding
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 
 class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListener{
+    private lateinit var binding: FragmentVentasBinding
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var toggle : ActionBarDrawerToggle
 
@@ -43,6 +43,11 @@ class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListe
 
         val navView = view.findViewById<NavigationView>(R.id.nav_view)
         navView.setNavigationItemSelectedListener(this)
+
+        val navController = view?.findNavController()
+        navController?.navigate(R.id.PantallaVentas)
+        iniciar()
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -52,7 +57,7 @@ class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListe
                 return true
             }
             R.id.Recibos -> {
-                findNavController().navigate(R.id.recibosFragment)
+                findNavController().navigate(R.id.PantallaRecibos)
                 return true
             }
             R.id.Articulos -> {
@@ -73,6 +78,13 @@ class VentasFragment : Fragment() , NavigationView.OnNavigationItemSelectedListe
             }
             else -> return false
         }
+    }
+
+    private fun iniciar() {
+        binding.btnComprar.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaCobro)
+        }
+
     }
 
 }

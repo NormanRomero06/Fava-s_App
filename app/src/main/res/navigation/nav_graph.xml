@@ -24,39 +24,61 @@
         android:label="fragment_ventas"
         tools:layout="@layout/fragment_ventas" >
         <action
-            android:id="@+id/action_PantallaVentas_to_metodoPago"
-            app:destination="@id/PantallaPagos" />
-        <action
             android:id="@+id/action_PantallaVentas_to_PantallaRegistrarse"
             app:destination="@id/PantallaRegistrarse" />
         <action
             android:id="@+id/action_PantallaVentas_to_cobroFragment"
-            app:destination="@id/cobroFragment" />
+            app:destination="@id/PantallaCobro" />
         <action
             android:id="@+id/action_PantallaVentas_to_recibosFragment"
-            app:destination="@id/recibosFragment" />
+            app:destination="@id/PantallaRecibos" />
     </fragment>
     <fragment
         android:id="@+id/PantallaPagos"
         android:name="com.example.appfavas.MetodoPago"
         android:label="fragment_metodo_pago"
-        tools:layout="@layout/fragment_metodo_pago" />
+        tools:layout="@layout/fragment_metodo_pago" >
+        <action
+            android:id="@+id/action_PantallaPagos_to_PantallaPagoTarjeta"
+            app:destination="@id/PantallaPagoTarjeta" />
+        <action
+            android:id="@+id/action_PantallaPagos_to_PantallaDividirPago"
+            app:destination="@id/PantallaDividirPago" />
+        <action
+            android:id="@+id/action_PantallaPagos_to_PantallaTotalCambio"
+            app:destination="@id/PantallaTotalCambio" />
+    </fragment>
     <fragment
         android:id="@+id/PantallaPagoTarjeta"
         android:name="com.example.appfavas.PagoTarjeta"
         android:label="fragment_pago_tarjeta"
         tools:layout="@layout/fragment_pago_tarjeta" />
     <fragment
-        android:id="@+id/cobroFragment"
+        android:id="@+id/PantallaCobro"
         android:name="com.example.appfavas.CobroFragment"
         android:label="CobroFragment" >
         <action
-            android:id="@+id/action_cobroFragment_to_PantallaPagoTarjeta"
-            app:destination="@id/PantallaPagoTarjeta" />
+            android:id="@+id/action_cobroFragment_to_PantallaPagos"
+            app:destination="@id/PantallaPagos" />
     </fragment>
     <fragment
-        android:id="@+id/recibosFragment"
+        android:id="@+id/PantallaRecibos"
         android:name="com.example.appfavas.RecibosFragment"
         android:label="fragment_recibos"
         tools:layout="@layout/fragment_recibos" />
+    <fragment
+        android:id="@+id/PantallaDividirPago"
+        android:name="com.example.appfavas.DividirPago"
+        android:label="fragment_dividir_pago"
+        tools:layout="@layout/fragment_dividir_pago" />
+    <fragment
+        android:id="@+id/PantallaTotalCambio"
+        android:name="com.example.appfavas.TotalCambio"
+        android:label="fragment_total_cambio"
+        tools:layout="@layout/fragment_total_cambio" />
+    <fragment
+        android:id="@+id/devolucionFragment"
+        android:name="com.example.appfavas.DevolucionFragment"
+        android:label="fragment_devolucion"
+        tools:layout="@layout/fragment_devolucion" />
 </navigation>

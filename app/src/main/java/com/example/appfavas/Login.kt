@@ -36,9 +36,6 @@ class Login : Fragment() {
         binding.btnLogin.setOnClickListener {
             Navigation.findNavController(binding.root).navigate(R.id.PantallaVentas)
         }
-        /*binding.btnLogin.setOnClickListener {
-            Navigation.findNavController(binding.root).navigate(R.id.PantallaVentas)
-        }*/
 
     }
 

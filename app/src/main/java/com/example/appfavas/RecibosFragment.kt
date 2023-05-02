@@ -46,7 +46,7 @@ class RecibosFragment : Fragment(), NavigationView.OnNavigationItemSelectedListe
                 return true
             }
             R.id.Recibos -> {
-                findNavController().navigate(R.id.recibosFragment)
+                findNavController().navigate(R.id.PantallaRecibos)
                 return true
             }
             R.id.Articulos -> {

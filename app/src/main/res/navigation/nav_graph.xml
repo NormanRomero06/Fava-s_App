@@ -129,4 +129,9 @@
         android:name="com.example.appfavas.CrudFrutas"
         android:label="fragment_crud_frutas"
         tools:layout="@layout/fragment_crud_frutas" />
+    <fragment
+        android:id="@+id/crearArticuloFragment"
+        android:name="com.example.appfavas.navigation.CrearArticuloFragment"
+        android:label="fragment_crud_articulo"
+        tools:layout="@layout/fragment_crud_articulo" />
 </navigation>

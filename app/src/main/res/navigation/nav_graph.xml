@@ -90,7 +90,7 @@
         tools:layout="@layout/fragment_devolucion" />
     <fragment
         android:id="@+id/PantallaTotalDividirPago"
-        android:name="com.example.appfavas.TotalDividirPago"
+        android:name="com.example.appfavas.navigation.TotalDividirPago"
         android:label="fragment_total_dividir_pago"
         tools:layout="@layout/fragment_total_dividir_pago" />
     <fragment
@@ -112,7 +112,7 @@
         tools:layout="@layout/fragment_todos_articulos" />
     <fragment
         android:id="@+id/PantallaFrutas"
-        android:name="com.example.appfavas.Frutas"
+        android:name="com.example.appfavas.navigation.Frutas"
         android:label="fragment_frutas"
         tools:layout="@layout/fragment_frutas" >
         <action
@@ -121,12 +121,12 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaAgregarFrutas"
-        android:name="com.example.appfavas.AgregarFrutas"
+        android:name="com.example.appfavas.navigation.AgregarFrutas"
         android:label="fragment_agregar_frutas"
         tools:layout="@layout/fragment_agregar_frutas" />
     <fragment
         android:id="@+id/PantallaCrudFrutas"
-        android:name="com.example.appfavas.CrudFrutas"
+        android:name="com.example.appfavas.navigation.CrudFrutas"
         android:label="fragment_crud_frutas"
         tools:layout="@layout/fragment_crud_frutas" />
     <fragment

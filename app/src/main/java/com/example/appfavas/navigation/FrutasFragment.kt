@@ -10,7 +10,7 @@ import androidx.navigation.findNavController
 import com.example.appfavas.R
 import com.example.appfavas.databinding.FragmentFrutasBinding
 
-class Frutas : Fragment() {
+class FrutasFragment : Fragment() {
     private lateinit var binding: FragmentFrutasBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

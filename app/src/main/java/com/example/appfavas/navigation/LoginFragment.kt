@@ -11,7 +11,7 @@ import com.example.appfavas.R
 import com.example.appfavas.databinding.FragmentLoginBinding
 
 
-class Login : Fragment() {
+class LoginFragment : Fragment() {
     private lateinit var binding: FragmentLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

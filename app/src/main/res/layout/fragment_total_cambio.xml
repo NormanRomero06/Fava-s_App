@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context=".navigation.TotalCambio">
+    tools:context=".navigation.TotalCambioFragment">
 
     <View
         android:id="@+id/VwInicio"

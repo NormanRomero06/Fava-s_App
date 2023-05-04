@@ -134,4 +134,9 @@
         android:name="com.example.appfavas.navigation.CrearArticuloFragment"
         android:label="fragment_crud_articulo"
         tools:layout="@layout/fragment_crud_articulo" />
+    <fragment
+        android:id="@+id/cocinaFragment"
+        android:name="com.example.appfavas.CocinaFragment"
+        android:label="fragment_cocina"
+        tools:layout="@layout/fragment_cocina" />
 </navigation>

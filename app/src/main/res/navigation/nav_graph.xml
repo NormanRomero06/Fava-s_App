@@ -6,7 +6,7 @@
     app:startDestination="@id/PantallaLogin">
     <fragment
         android:id="@+id/PantallaLogin"
-        android:name="com.example.appfavas.navigation.Login"
+        android:name="com.example.appfavas.navigation.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaRegistrarse"
-        android:name="com.example.appfavas.navigation.Registrarse"
+        android:name="com.example.appfavas.navigation.RegistrarseFragment"
         android:label="fragment_registrarse"
         tools:layout="@layout/fragment_registrarse" />
     <fragment
@@ -38,7 +38,7 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaPagos"
-        android:name="com.example.appfavas.navigation.MetodoPago"
+        android:name="com.example.appfavas.navigation.MetodoPagoFragment"
         android:label="fragment_metodo_pago"
         tools:layout="@layout/fragment_metodo_pago" >
         <action
@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaPagoTarjeta"
-        android:name="com.example.appfavas.navigation.PagoTarjeta"
+        android:name="com.example.appfavas.navigation.PagoTarjetaFragment"
         android:label="fragment_pago_tarjeta"
         tools:layout="@layout/fragment_pago_tarjeta" />
     <fragment
@@ -71,7 +71,7 @@
         tools:layout="@layout/fragment_recibos" />
     <fragment
         android:id="@+id/PantallaDividirPago"
-        android:name="com.example.appfavas.navigation.DividirPago"
+        android:name="com.example.appfavas.navigation.DividirPagoFragment"
         android:label="fragment_dividir_pago"
         tools:layout="@layout/fragment_dividir_pago" >
         <action
@@ -80,7 +80,7 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaTotalCambio"
-        android:name="com.example.appfavas.navigation.TotalCambio"
+        android:name="com.example.appfavas.navigation.TotalCambioFragment"
         android:label="fragment_total_cambio"
         tools:layout="@layout/fragment_total_cambio" />
     <fragment
@@ -90,7 +90,7 @@
         tools:layout="@layout/fragment_devolucion" />
     <fragment
         android:id="@+id/PantallaTotalDividirPago"
-        android:name="com.example.appfavas.navigation.TotalDividirPago"
+        android:name="com.example.appfavas.navigation.TotalDividirPagoFragment"
         android:label="fragment_total_dividir_pago"
         tools:layout="@layout/fragment_total_dividir_pago" />
     <fragment
@@ -112,7 +112,7 @@
         tools:layout="@layout/fragment_todos_articulos" />
     <fragment
         android:id="@+id/PantallaFrutas"
-        android:name="com.example.appfavas.navigation.Frutas"
+        android:name="com.example.appfavas.navigation.FrutasFragment"
         android:label="fragment_frutas"
         tools:layout="@layout/fragment_frutas" >
         <action
@@ -121,12 +121,12 @@
     </fragment>
     <fragment
         android:id="@+id/PantallaAgregarFrutas"
-        android:name="com.example.appfavas.navigation.AgregarFrutas"
+        android:name="com.example.appfavas.navigation.AgregarFrutasFragment"
         android:label="fragment_agregar_frutas"
         tools:layout="@layout/fragment_agregar_frutas" />
     <fragment
         android:id="@+id/PantallaCrudFrutas"
-        android:name="com.example.appfavas.navigation.CrudFrutas"
+        android:name="com.example.appfavas.navigation.CrudFrutasFragment"
         android:label="fragment_crud_frutas"
         tools:layout="@layout/fragment_crud_frutas" />
     <fragment
@@ -134,4 +134,9 @@
         android:name="com.example.appfavas.navigation.CrearArticuloFragment"
         android:label="fragment_crud_articulo"
         tools:layout="@layout/fragment_crud_articulo" />
+    <fragment
+        android:id="@+id/cocinaFragment"
+        android:name="com.example.appfavas.CocinaFragment"
+        android:label="fragment_cocina"
+        tools:layout="@layout/fragment_cocina" />
 </navigation>

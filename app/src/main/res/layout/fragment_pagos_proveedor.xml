@@ -5,95 +5,118 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".navigation.VentasFragment">
+    tools:context=".navigation.ListaPagosFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ordenar"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp"
+        android:text="PAGOS PROVEEDOR"
+        android:textColor="@color/black"
+        android:textSize="25sp"
         android:gravity="center"
-        android:id="@+id/tvOrdenar"
+        android:id="@+id/tvPagosProveedor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="70dp"
-        android:layout_marginRight="290dp"
+        />
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Referencia del pago"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvReferenciaPago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPagosProveedor"
+        app:layout_constraintEnd_toEndOf="parent"
         />
 
     <EditText
-        android:layout_width="match_parent"
+        android:id="@+id/etProveedor"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:id="@+id/etOrdenar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
         android:backgroundTint="@color/black"
-        android:drawableLeft="@drawable/search_icon_24"
-        />
+        android:layout_marginLeft="15dp"
+        android:hint="Proveedor"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvReferenciaPago" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:text="Categoría"
-        android:textColor="@color/colorPrimaryDark"
+        android:text="Cantidad"
+        android:textColor="@color/gray"
         android:textSize="20sp"
-        android:gravity="center"
-        android:id="@+id/tvListaCategoria"
+        android:layout_marginTop="30dp"
+        android:id="@+id/tvCantidad"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etProveedor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/etOrdenar"
-        android:layout_marginTop="70dp"
-        android:layout_marginRight="290dp"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/etCantidad"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvListaCategoria"
-        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="15dp"
+        android:hint="0.00"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        android:id="@+id/rvVentasCategoria"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCantidad" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Producto"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp"
-        android:gravity="center"
-        android:id="@+id/tvListaProducto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rvVentasCategoria"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="290dp"
-        />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnComprar"
-        android:layout_width="120dp"
+        android:id="@+id/btnRealizarPago"
+        android:layout_width="180dp"
         android:layout_height="0dp"
-        android:text="Comprar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
         android:background="@drawable/btn_shape"
+        android:text="Efectivo"
         android:textColor="@color/boton"
-        android:layout_marginBottom="20dp"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvListaProducto"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etCantidad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        android:id="@+id/rvProducto"/>
+        />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditarPago"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_shape"
+        android:text="Editar Pago"
+        android:textColor="@color/boton"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnRealizarPago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEliminarPago"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_shape"
+        android:text="Eliminar Pago"
+        android:textColor="@color/boton"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnEditarPago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -130,8 +153,9 @@
             app:itemTextColor="@color/black"
             app:menu="@menu/nav_menu" />
 
-    </androidx.drawerlayout.widget.DrawerLayout>
 
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

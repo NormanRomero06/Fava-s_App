@@ -9,7 +9,7 @@ import androidx.navigation.Navigation
 import com.example.appfavas.R
 import com.example.appfavas.databinding.FragmentMetodoPagoBinding
 
-class MetodoPago : Fragment() {
+class MetodoPagoFragment : Fragment() {
     private lateinit var binding: FragmentMetodoPagoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

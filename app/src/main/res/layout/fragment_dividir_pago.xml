@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".navigation.DividirPago">
+    tools:context=".navigation.DividirPagoFragment">
 
     <View
         android:id="@+id/VwInicio"
@@ -114,7 +114,7 @@
         android:id="@+id/btnCobrarTj"
         android:layout_width="160dp"
         android:layout_height="40dp"
-        android:background="@drawable/login_btn_bg"
+        android:background="@drawable/btn_shape"
         android:text="Cobrar"
         android:textColor="@color/boton"
         android:textSize="28sp"

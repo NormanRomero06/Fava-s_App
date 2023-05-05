@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context=".navigation.TotalCambio">
+    tools:context=".navigation.TotalCambioFragment">
 
     <View
         android:id="@+id/VwInicio"
@@ -105,7 +105,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/login_btn_bg"
+        android:background="@drawable/btn_shape"
         android:text="Nueva Venta"
         android:textColor="@color/boton"
         android:layout_marginBottom="50dp"

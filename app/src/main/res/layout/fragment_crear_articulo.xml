@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
-    <Spinner
+    <!--<Spinner
         android:layout_width="350dp"
         android:layout_height="30dp"
         android:id="@+id/cbxCategoria"
@@ -71,13 +71,13 @@
         app:layout_constraintTop_toBottomOf="@id/etNombreArticulo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:prompt="Categoria"/>
+        android:prompt="Categoria"/>-->
 
     <EditText
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:id="@+id/etPrecioArticulo"
-        app:layout_constraintTop_toBottomOf="@id/cbxCategoria"
+        app:layout_constraintTop_toBottomOf="@id/etNombreArticulo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/gray"

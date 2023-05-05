@@ -19,8 +19,6 @@ class LoginFragment : Fragment() {
         arguments?.let {
             val navController = view?.findNavController()
             navController?.navigate(R.id.PantallaLogin)
-
-
         }
     }
 

@@ -104,6 +104,9 @@
         <action
             android:id="@+id/action_PantallaMenuArticulos_to_frutas"
             app:destination="@id/PantallaFrutas" />
+        <action
+            android:id="@+id/action_PantallaMenuArticulos_to_articuloMenu"
+            app:destination="@id/PantallaArticuloMenu" />
     </fragment>
     <fragment
         android:id="@+id/PantallaTodosLosArticulos"
@@ -139,4 +142,35 @@
         android:name="com.example.appfavas.CocinaFragment"
         android:label="fragment_cocina"
         tools:layout="@layout/fragment_cocina" />
+    <fragment
+        android:id="@+id/PantallaArticuloMenu"
+        android:name="com.example.appfavas.navigation.ArticuloMenu"
+        android:label="fragment_articulo_menu"
+        tools:layout="@layout/fragment_articulo_menu" >
+        <action
+            android:id="@+id/action_PantallaArticuloMenu_to_crudArticuloMenu"
+            app:destination="@id/PantallaCrudArticuloMenu" />
+        <action
+            android:id="@+id/action_PantallaArticuloMenu_to_PantallaCrearArticuloMenu"
+            app:destination="@id/PantallaCrearArticuloMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/PantallaCrearBatido"
+        android:name="com.example.appfavas.navigation.CrearBatido"
+        android:label="fragment_crear_batido"
+        tools:layout="@layout/fragment_crear_batido" />
+    <fragment
+        android:id="@+id/PantallaCrearArticuloMenu"
+        android:name="com.example.appfavas.navigation.CrearArticuloMenu"
+        android:label="fragment_crear_articulo_menu"
+        tools:layout="@layout/fragment_crear_articulo_menu">
+        <action
+            android:id="@+id/action_crearArticuloMenu_to_crearBatido"
+            app:destination="@id/PantallaCrearBatido" />
+    </fragment>
+    <fragment
+        android:id="@+id/PantallaCrudArticuloMenu"
+        android:name="com.example.appfavas.navigation.CrudArticuloMenu"
+        android:label="fragment_crud_articulo_menu"
+        tools:layout="@layout/fragment_crud_articulo_menu" />
 </navigation>

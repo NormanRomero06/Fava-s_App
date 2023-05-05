@@ -56,12 +56,25 @@
         android:background="@color/white"
         android:drawableLeft="@drawable/baseline_percent_24"
         android:drawablePadding="10dp"
-        android:text="Categoría"
+        android:text="Promociones"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnCategoria" />
+
+    <Button
+        android:id="@+id/btnControlFrutas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:text="Control De Frutas"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPromociones" />
 
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.appbar.MaterialToolbar

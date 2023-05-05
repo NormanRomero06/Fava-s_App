@@ -5,28 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.appfavas.R
+import com.example.appfavas.databinding.FragmentCrearArticuloMenuBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [CrearArticuloMenu.newInstance] factory method to
- * create an instance of this fragment.
- */
 class CrearArticuloMenu : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private lateinit var binding: FragmentCrearArticuloMenuBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+            val navController = view?.findNavController()
+            navController?.navigate(R.id.PantallaCrearArticuloMenu)
         }
     }
 
@@ -34,27 +25,22 @@ class CrearArticuloMenu : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_crear_articulo_menu, container, false)
+        binding = FragmentCrearArticuloMenuBinding.inflate(layoutInflater)
+        iniciar()
+        return binding.root
+
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment CrearArticuloMenu.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            CrearArticuloMenu().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun iniciar(){
+        binding.IvRegresar.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaArticuloMenu)
+        }
+        binding.tvGuardar.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaArticuloMenu)
+        }
+        binding.btnCrearBatido.setOnClickListener {
+            Navigation.findNavController(binding.root).navigate(R.id.PantallaCrearBatido)
+        }
     }
+
 }

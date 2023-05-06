@@ -44,6 +44,7 @@
         android:id="@+id/etNombreArticuloMenu"
         android:layout_width="350dp"
         android:layout_height="0dp"
+        android:minHeight="48sp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/gray"
         android:hint="Nombre"
@@ -52,8 +53,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/VwInicio" />
 
-    <!--
-    <Spinner
+    <!--Spinner
         android:id="@+id/cbxCategoriaMenu"
         android:layout_width="350dp"
         android:layout_height="0dp"
@@ -62,8 +62,7 @@
         android:prompt="Categoria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNombreArticuloMenu" />
-        -->
+        app:layout_constraintTop_toBottomOf="@id/etNombreArticuloMenu" /-->
 
     <EditText
         android:id="@+id/etPrecioArticuloMenu"
@@ -71,6 +70,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/gray"
+        android:minHeight="48sp"
         android:hint="Precio"
         android:inputType="number"
         android:textColorHint="@color/gray"
@@ -106,6 +106,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
+        android:minHeight="48sp"
         android:hint="0"
         android:inputType="number"
         android:textColorHint="@color/gray"
@@ -135,24 +136,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/ivArticulo"
         app:layout_constraintTop_toBottomOf="@id/etPrecioArticuloMenu" />
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnEditarArticuloMenu"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
+        android:contentDescription="EditarArticulo"
         android:background="@drawable/editar"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btnLimpiarCampos"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivArticulo" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnLimpiarCampos"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/limpiar"
         android:textStyle="bold"
+        android:contentDescription="Limpiar Campos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnEditarArticuloMenu"
         app:layout_constraintTop_toBottomOf="@id/ivArticulo" />

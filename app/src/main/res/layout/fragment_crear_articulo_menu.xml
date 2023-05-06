@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -45,6 +46,7 @@
         android:layout_width="350dp"
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
+        android:minHeight="48sp"
         android:backgroundTint="@color/gray"
         android:hint="Nombre"
         android:textColorHint="@color/gray"
@@ -60,9 +62,10 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/black"
         android:prompt="Categoria"
+        android:contentDescription="Categoria Menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNombreArticuloMenu" />-->
+        app:layout_constraintTop_toBottomOf="@id/etNombreArticuloMenu" /-->
 
     <EditText
         android:id="@+id/etPrecioArticuloMenu"
@@ -70,12 +73,13 @@
         android:layout_height="0dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/gray"
+        android:minHeight="48sp"
         android:hint="Precio"
         android:inputType="number"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNombreArticuloMenu" />
+        app:layout_constraintTop_toBottomOf="@id/etNombreArticuloMenu"/>
 
     <TextView
         android:id="@+id/tvInventario"
@@ -105,6 +109,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/gray"
+        android:minHeight="48sp"
         android:hint="0"
         android:inputType="number"
         android:textColorHint="@color/gray"
@@ -135,12 +140,13 @@
         app:layout_constraintStart_toEndOf="@id/ivArticulo"
         app:layout_constraintTop_toBottomOf="@id/etPrecioArticuloMenu" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/btnCrearBatido"
         android:layout_width="150dp"
         android:layout_height="0dp"
         android:background="@drawable/btn_shape"
         android:text="Crear Batido"
+        android:contentDescription="Crear Batido"
         android:textColor="@color/boton"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
